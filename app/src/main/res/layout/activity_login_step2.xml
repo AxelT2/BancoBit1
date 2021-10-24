@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.BancoBit1"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".login_step2">
+
+    <ImageView
+        android:id="@+id/fondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.2"
+        android:background="#00FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/lineaGuia"
+        app:srcCompat="@drawable/tiledbackground"
+        tools:layout_editor_absoluteX="-19dp" />
+
+    <Button
+        android:id="@+id/Entrar"
+        android:layout_width="123dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="577dp"
+        android:backgroundTint="@color/moradoBoton"
+        android:text="Entrar"
+        android:textSize="10sp"
+        android:onClick="sendMessage1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/volver"
+        android:layout_width="124dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="642dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="volver"
+        android:textSize="10sp"
+        android:onClick="sendMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/accent1"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/lineaGuia"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/Logo"
+            android:layout_width="273dp"
+            android:layout_height="199dp"
+            app:srcCompat="@drawable/logobro"
+            tools:ignore="MissingConstraints" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/idCuenta"
+        android:layout_width="212dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="411dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="Cuenta"
+        android:textColor="#88000000"
+        android:textColorHint="#72000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="216dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="473dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="Contraseña"
+        android:textColor="#7A000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/lineaGuia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="383dp" />
+
+    <Button
+        android:id="@+id/forgotPass"
+        android:layout_width="166dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="529dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="Olvide mi contraseña"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>

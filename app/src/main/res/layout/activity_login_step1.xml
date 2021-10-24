@@ -1,23 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Morado"
+    android:background="@color/purple_200"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:theme="@style/Theme.BancoBit1"
+    tools:context=".login_step1">
+
+    <ImageView
+        android:id="@+id/fondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.2"
+        android:background="#00FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/lineaGuia"
+        app:srcCompat="@drawable/tiledbackground"
+        tools:layout_editor_absoluteX="-19dp" />
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@color/accent1"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/lineaGuia"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/lineaGuia"
-        android:gravity="center">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/Logo"
@@ -36,23 +49,30 @@
         android:id="@+id/btnInicioSesion"
         android:layout_width="116dp"
         android:layout_height="45dp"
+        android:layout_marginTop="443dp"
         android:background="@drawable/roundbuttons"
         android:backgroundTint="@color/moradoBoton"
         android:text="INICIAR SESION"
         android:visibility="visible"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="443dp"
+        android:onClick="sendMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/btnProblemas"
+        android:id="@+id/btnRegistrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:background="@drawable/roundbuttons"
         android:backgroundTint="@color/moradoBoton"
         android:text="Registrarse"
         android:visibility="visible"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="500dp"
+        android:onClick="sendMessage1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <android.support.constraint.Guideline
@@ -63,13 +83,15 @@
         app:layout_constraintGuide_begin="383dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/ayuda"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="107dp"
+        android:backgroundTint="@color/purple_200"
         android:text="Ayuda"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="576dp"
-        android:backgroundTint="@color/Morado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
 
