@@ -16,7 +16,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BancoBit1">
-        <activity android:name=".main_menu"></activity>
+        <activity android:name=".transferencia"></activity>
+        <activity android:name=".main_menu" />
         <activity android:name=".registrar" />
         <activity android:name=".login_step2" />
         <activity android:name=".login_step1" />

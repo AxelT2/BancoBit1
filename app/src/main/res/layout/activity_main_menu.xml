@@ -187,20 +187,32 @@
         android:id="@+id/bits"
         android:layout_width="115dp"
         android:layout_height="65dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="605dp"
+        android:layout_marginEnd="272dp"
+        android:layout_marginRight="272dp"
+        android:layout_marginBottom="61dp"
         android:background="@drawable/bits"
         android:onClick="sendmessage"
         android:textColor="@color/moradotwitch"
         android:textColorHighlight="@color/moradotwitch"
         android:textColorHint="@color/moradotwitch"
         android:textColorLink="@color/moradotwitch"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="605dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/stars"
         android:layout_width="115dp"
         android:layout_height="65dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="148dp"
         android:layout_marginTop="605dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginRight="148dp"
         android:layout_marginBottom="61dp"
         android:background="@drawable/estrellas"
         android:onClick="sendmessage2"
@@ -209,8 +221,9 @@
         android:textColorHint="@color/moradotwitch"
         android:textColorLink="@color/moradotwitch"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="148dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/yutu"
@@ -221,12 +234,14 @@
         android:layout_marginTop="605dp"
         android:layout_marginEnd="45dp"
         android:layout_marginRight="45dp"
+        android:layout_marginBottom="57dp"
         android:background="@drawable/yutu"
         android:onClick="sendmessage3"
         android:textColor="@color/moradotwitch"
         android:textColorHighlight="@color/moradotwitch"
         android:textColorHint="@color/moradotwitch"
         android:textColorLink="@color/moradotwitch"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
